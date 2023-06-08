@@ -1,7 +1,7 @@
 # Data_Challenge_Daleth_2023
 Low Contrast Wave Anomalies Detection and Classification in Infrared Images
 
-Three datasets were provided in this project.Each had two classes labeled with 'Ok' and 'vague'. For each of the datasets, .ipynb file is provided in this repository.
+Three datasets were provided in this project.Each had two classes labeled with 'Ok' and 'vague'. For each of the datasets, .ipynb file is provided in this repository. The data was provided by LYNRED company.
 Dataset details : 
 
 1.
@@ -37,7 +37,7 @@ Here is the general architecture of this model:
 The figure above shows the changes of accuracy and validation accuracy over epoch.
 
 ---------------------------
-For the second dataset we used Resnet101 and also we added a scheduler to keep track of the transfer learning rate. The scheduler multiplies the transfer learning rate by e^(-0.1). We also used early stopping method in order to avoid overfitting. 
+For the second and the third dataset we used Resnet101 and also we added a scheduler to keep track of the transfer learning rate. The scheduler multiplies the transfer learning rate by e^(-0.1). We also used early stopping method in order to avoid overfitting. 
 
 Here is the general architecture of this model: 
 
@@ -50,8 +50,16 @@ In the code provided for this dataset, you can see that there is 'model.load_wei
 
 ![Figure_1](https://github.com/KouroshGerayeli/Data_Challenge_Daleth_2023/assets/92382815/7214bdc6-8082-43c6-add6-d0c8a8eb3211)
 
-This figure shows the validation metric changes in terms of epochs and score for the second dataset with 25 epochs.
+This figure shows the validation metric changes in terms of epochs and score for the second dataset with 25 epochs (dataset2).
 
+
+![download (1)](https://github.com/KouroshGerayeli/Data_Challenge_Daleth_2023/assets/92382815/7ba0e491-f779-4d8d-8b3d-610c23d6baa6)
+
+
+This figure shows the validation metric changes in terms of epochs and score for the second dataset with 25 epochs (dataset3).
+The general architecture is the same for both dataset2 and dataset3.
+
+This project was done by Sina Khanagha, Kourosh Gerayeli and Claire Vanbuckhave in data challenge project 2023 at UGA-INP (Phelma) in partnership with LYNRED.
 
 
 
