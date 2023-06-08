@@ -21,11 +21,13 @@ Dataset details :
 
 
 ---------------------------
-Regarding the first dataset, we used resnet50 model for the transfer learning approach and some layers were added to it.
+Regarding the first dataset, we used resnet50 model for the transfer learning approach and some layers were added to it. We used earlystopping function in python to avoid overfitting.
 
 Here is the general architecture of this model:
 ![ResNet50_dataset1](https://github.com/KouroshGerayeli/Data_Challenge_Daleth_2023/assets/92382815/aee6e310-56e9-4e61-bd8d-7e86a9fcae46)
 
+![download (2)](https://github.com/KouroshGerayeli/Data_Challenge_Daleth_2023/assets/92382815/5fce25f3-766b-496f-8db3-7b636984ac62)
+The figure above shows the changes of accuracy and validation accuracy over epoch.
 ---------------------------
 For the second dataset we used Resnet101 and also we added a scheduler to keep track of the transfer learning rate. The scheduler multiplies the transfer learning rate by e^(-0.1). We also used early stopping method in order to avoid overfitting. 
 
